@@ -1,0 +1,40 @@
+body {
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#pad {
+    width: 140px;
+    height: 140px;
+    margin: 6px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#pad:active {
+    background-color: red;
+}
+
+.pad-title {
+    padding: 14px 0px 0px 14px;
+    font-size: 20px;
+}
+
+.sound-title {
+    padding: 0px 0px 14px 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
