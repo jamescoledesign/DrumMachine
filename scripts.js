@@ -22,11 +22,11 @@ document.onkeydown = function(e) {
     if (e.which == 81) {
         activate(0);
     } else if (e.which == 87) {
-        activate(1);w
+        activate(1);
     } else if (e.which == 69) {
         activate(2);
     } else if (e.which == 82) {
-        activate(3);q
+        activate(3);
     }
   };
 
@@ -34,10 +34,10 @@ document.onkeydown = function(e) {
     if (e.which == 81) {
         pause(0);
     } else if (e.which == 87) {
-        pause(1);w
+        pause(1);
     } else if (e.which == 69) {
         pause(2);
     } else if (e.which == 82) {
-        pause(3);q
+        pause(3);
     }
   };
