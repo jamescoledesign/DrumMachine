@@ -19,25 +19,25 @@ function pause(sound) {
 // Use keyboard to activate pad sound
 
 document.onkeydown = function(e) {
-    if (e.which == 81) {
+    if (e.which == 49) {
         activate(0);
-    } else if (e.which == 87) {
+    } else if (e.which == 50) {
         activate(1);
-    } else if (e.which == 69) {
+    } else if (e.which == 51) {
         activate(2);
-    } else if (e.which == 82) {
+    } else if (e.which == 52) {
         activate(3);
     }
   };
 
   document.onkeyup = function(e) {
-    if (e.which == 81) {
+    if (e.which == 49) {
         pause(0);
-    } else if (e.which == 87) {
+    } else if (e.which == 50) {
         pause(1);
-    } else if (e.which == 69) {
+    } else if (e.which == 51) {
         pause(2);
-    } else if (e.which == 82) {
+    } else if (e.which == 52) {
         pause(3);
     }
   };
