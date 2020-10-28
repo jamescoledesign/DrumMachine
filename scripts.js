@@ -1,4 +1,4 @@
-let audioArr = [
+const audioArr = [
     new Audio("sounds/Kick.wav"), 
     new Audio("sounds/Hat-Closed.wav"), 
     new Audio("sounds/Snare-Center.wav"),
@@ -55,3 +55,34 @@ document.onkeydown = function(e) {
         document.getElementById("pad4").style.backgroundColor = "black";
     }
   };
+
+  // Executes on each pad
+
+let padOne = document.getElementById("pad1");
+let padTwo = document.getElementById("pad2");
+let padThree = document.getElementById("pad3");
+let padFour = document.getElementById("pad4");
+
+const padArr = [padOne, padTwo, padThree, padFour];
+let padSelection = 0;
+
+for (var i = 0; i < padArr.length; i++) {
+    (function(index) {
+        // Execute this code on each pad when clicked
+        //Play Audio
+         padArr[index].addEventListener("mousedown", function() {
+            padSelection = index;
+            console.log('Pad ' + padSelection + ' was clicked');
+            let sound = padSelection;
+            activate(sound);
+          })
+        // Pause Audio  
+          padArr[index].addEventListener("mouseup", function() {
+           padSelection = index;
+           let sound = padSelection;
+           pause(sound);
+         })
+    })(i);
+}
+
+
