@@ -24,12 +24,16 @@ document.onkeydown = function(e) {
     
     if (keyResult == 1) {
         activate(0);
+        document.getElementById("pad1").style.backgroundColor = "red";
     } else if (keyResult == 2) {
         activate(1);
+        document.getElementById("pad2").style.backgroundColor = "red";
     } else if (keyResult == 3) {
         activate(2);
+        document.getElementById("pad3").style.backgroundColor = "red";
     } else if (keyResult== 4) {
         activate(3);
+        document.getElementById("pad4").style.backgroundColor = "red";
     }
   };
 
@@ -39,11 +43,15 @@ document.onkeydown = function(e) {
 
     if (keyResult == 1) {
         pause(0);
+        document.getElementById("pad1").style.backgroundColor = "black";
     } else if (keyResult == 2) {
         pause(1);
+        document.getElementById("pad2").style.backgroundColor = "black";
     } else if (keyResult == 3) {
         pause(2);
+        document.getElementById("pad3").style.backgroundColor = "black";
     } else if (keyResult== 4) {
         pause(3);
+        document.getElementById("pad4").style.backgroundColor = "black";
     }
   };

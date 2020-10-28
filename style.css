@@ -14,16 +14,16 @@ body {
     flex-direction: row;
 }
 
-#pad {
+#pad1, #pad2, #pad3, #pad4 {
     width: 140px;
     height: 140px;
     margin: 6px;
-    background-color: black;
     color: white;
+    background-color: black;
     position: relative;
 }
 
-#pad:active {
+#pad1:active, #pad2:active, #pad3:active, #pad4:active {
     background-color: red;
 }
 
