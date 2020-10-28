@@ -14,7 +14,7 @@ body {
     flex-direction: row;
 }
 
-#pad1, #pad2, #pad3, #pad4 {
+#pad1, #pad2, #pad3, #pad4, #pad5, #pad6, #pad7, #pad8, #pad9, #pad10, #pad11, #pad12, #pad13, #pad14, #pad15, #pad16 {
     z-index: 0;
     width: 140px;
     height: 140px;
