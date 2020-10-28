@@ -15,6 +15,7 @@ body {
 }
 
 #pad1, #pad2, #pad3, #pad4 {
+    z-index: 0;
     width: 140px;
     height: 140px;
     margin: 6px;
@@ -23,18 +24,32 @@ body {
     position: relative;
 }
 
-#pad1:active, #pad2:active, #pad3:active, #pad4:active {
-    background-color: red;
-}
-
 .pad-title {
+    position: relative;
+    z-index: 2;
     padding: 14px 0px 0px 14px;
     font-size: 20px;
 }
 
 .sound-title {
+    z-index: 2;
     padding: 0px 0px 14px 14px;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+button {
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: -34.3px;
+    border: none;
+    background-color: unset;
+}
+
+button:active {
+    background-color: red;
 }

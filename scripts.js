@@ -5,7 +5,7 @@ let audioArr = [
     new Audio("sounds/Snare-Rim.wav")
 ];
 
-// Use mouse to activate pad sound
+// Activate pad sound
 
 function activate(sound) {
     audioArr[sound].play();
