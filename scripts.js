@@ -36,11 +36,6 @@ const padSixteen = document.getElementById("pad16");
 
 const padArr = [padOne, padTwo, padThree, padFour, padFive, padSix, padSeven, padEight, padNine, padTen, padEleven, padTwelve, padThirteen, padFourteen, padFifteen, padSixteen];
 
-
-for (let i=0; i > padArr.length; i++) {
-    padArr[i].preload;
-}
-
 let padSelection = 0;
 let sound = 0;
 let keyPressed = 0
