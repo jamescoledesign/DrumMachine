@@ -67,6 +67,19 @@ for (var i = 0; i < padArr.length; i++) {
            let sound = padSelection;
            pause(sound);
          })
+        // Play audio on mobile 
+         padArr[index].addEventListener("touchstart", function() {
+            padSelection = index;
+            console.log('Pad ' + padSelection + ' was clicked');
+            let sound = padSelection;
+            activate(sound);
+          })
+        // Pause audio on mobile
+          padArr[index].addEventListener("touchend", function() {
+           padSelection = index;
+           let sound = padSelection;
+           pause(sound);
+         })
 
     })(i);
 }
