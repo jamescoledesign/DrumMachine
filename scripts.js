@@ -68,14 +68,14 @@ for (var i = 0; i < padArr.length; i++) {
            pause(sound);
          })
         // Play audio on mobile 
-         padArr[index].addEventListener("touchstart", function() {
+         padArr[index].addEventListener("ontouchstart", function() {
             padSelection = index;
             console.log('Pad ' + padSelection + ' was clicked');
             let sound = padSelection;
             activate(sound);
           })
         // Pause audio on mobile
-          padArr[index].addEventListener("touchend", function() {
+          padArr[index].addEventListener("ontouchend", function() {
            padSelection = index;
            let sound = padSelection;
            pause(sound);
