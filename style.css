@@ -1,5 +1,5 @@
 body {
-    margin: 0 60px 0 60px;
+    margin: 0 auto;
     font-family: Helvetica, Arial, sans-serif;
     background-color: black;
     display: flex;
@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    width: 930px;
 }
 
 #controls {
@@ -78,7 +79,7 @@ hr {
 hr.footer-line {
     align-self: flex-end;
     justify-self: center;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     width: 930px;
     margin-top: 60px;
 }
@@ -168,4 +169,22 @@ button {
 
 button:active {
     background-color: red;
+}
+
+#footer {
+    align-self: center;
+    color: white;
+    max-width: 930px;
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.about {
+    float: left;
+}
+
+.legal {
+    float: right;
 }
