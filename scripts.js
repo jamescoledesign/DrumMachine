@@ -51,9 +51,9 @@ function pause(sound) {
     audioArr[sound].currentTime = 0;
 }
 
-// Executes on each pad with mouse
+// Executes on each pad with mouse or touch
 
-/*for (var i = 0; i < padArr.length; i++) {
+for (var i = 0; i < padArr.length; i++) {
     (function(index) {
         padArr[index].addEventListener("mousedown", function() {
             padSelection = index;
@@ -82,7 +82,7 @@ function pause(sound) {
          })
 
     })(i);
-}*/
+}
 
 // Use keyboard to activate pad sound / change to black
 
