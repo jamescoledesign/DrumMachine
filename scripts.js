@@ -1,21 +1,21 @@
-const audioArr = [
-    new Audio("sounds/Crash.wav"), 
-    new Audio("sounds/Djembe-Center.wav"),
-    new Audio("sounds/Djembe-Rim.wav"),  
-    new Audio("sounds/Floor-Tom.wav"), 
-    new Audio("sounds/Hat-Closed.wav"),
-    new Audio("sounds/Hat-Open.wav"),
-    new Audio("sounds/Hat-Pedal.wav"),
-    new Audio("sounds/Kick.wav"),
-    new Audio("sounds/Ride-Bell.wav"),
-    new Audio("sounds/Ride.wav"),
-    new Audio("sounds/Snare-Center.wav"),
-    new Audio("sounds/Snare-Edge.wav"),
-    new Audio("sounds/Snare-Rim.wav"),
-    new Audio("sounds/Tam-A.wav"), 
-    new Audio("sounds/Tam-B.wav"), 
-    new Audio("sounds/Tom.wav")
-];
+let audio1 = new Audio("sounds/Crash.wav"); 
+let audio2 = new Audio("sounds/Djembe-Center.wav");
+let audio3 = new Audio("sounds/Djembe-Rim.wav");  
+let audio4 = new Audio("sounds/Floor-Tom.wav"); 
+let audio5 = new Audio("sounds/Hat-Closed.wav");
+let audio6 = new Audio("sounds/Hat-Open.wav");
+let audio7 = new Audio("sounds/Hat-Pedal.wav");
+let audio8 = new Audio("sounds/Kick.wav");
+let audio9 = new Audio("sounds/Ride-Bell.wav");
+let audio10 = new Audio("sounds/Ride.wav");
+let audio11 = new Audio("sounds/Snare-Center.wav");
+let audio12 = new Audio("sounds/Snare-Edge.wav");
+let audio13 = new Audio("sounds/Snare-Rim.wav");
+let audio14 = new Audio("sounds/Tam-A.wav");
+let audio15 = new Audio("sounds/Tam-B.wav"); 
+let audio16 = new Audio("sounds/Tom.wav");
+
+let audioArr = [audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10, audio11, audio12, audio13, audio14, audio15, audio16];
 
 const padOne = document.getElementById("pad1");
 const padTwo = document.getElementById("pad2");
