@@ -1,5 +1,7 @@
 const audioArr = [
     new Audio("sounds/Crash.wav"), 
+    new Audio("sounds/Djembe-Center.wav"),
+    new Audio("sounds/Djembe-Rim.wav"),  
     new Audio("sounds/Floor-Tom.wav"), 
     new Audio("sounds/Hat-Closed.wav"),
     new Audio("sounds/Hat-Open.wav"),
@@ -10,6 +12,8 @@ const audioArr = [
     new Audio("sounds/Snare-Center.wav"),
     new Audio("sounds/Snare-Edge.wav"),
     new Audio("sounds/Snare-Rim.wav"),
+    new Audio("sounds/Tam-A.wav"), 
+    new Audio("sounds/Tam-B.wav"), 
     new Audio("sounds/Tom.wav")
 ];
 
@@ -67,7 +71,7 @@ for (var i = 0; i < padArr.length; i++) {
     })(i);
 }
 
-// Use keyboard to activate pad sound / change to red
+// Use keyboard to activate pad sound / change to black
 
 document.onkeydown = function(e) {
 
