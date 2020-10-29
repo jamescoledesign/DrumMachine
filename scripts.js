@@ -1,4 +1,4 @@
-let audio1 = new Audio("sounds/Crash.mp3"); 
+let audio1 = new Audio("sounds/Crash.wav"); 
 let audio2 = new Audio("sounds/Djembe-Center.wav");
 let audio3 = new Audio("sounds/Djembe-Rim.wav");  
 let audio4 = new Audio("sounds/Floor-Tom.wav"); 
