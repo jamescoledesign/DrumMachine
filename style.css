@@ -1,23 +1,109 @@
 body {
-    margin: 0 auto;
+    margin: 0 60px 0 60px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: black;
+    display: flex;
+    flex-direction: row;
 }
 
-#logo {
-
-    display: flex;
-    width: 240px;
+#controls {
+    position: relative;
+    width: 300px;
+    height: 594px;
     align-self: flex-end;
-    margin: 60px 0 30px 0;
+    margin: 0 30px 6px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#instructions {
+    padding-right: 16px;
+    height: 136px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    line-height: 24px;
+    letter-spacing: .5px;
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+}
+
+button.load {
+    float: left;
+    margin: 0 14px 14px 0;
+    position: unset;
+    border: none;
+    border-radius: 8px;
+    z-index: unset;
+    background-color: darkgray;
+    height: 60px;
+    width: 80px;;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    color: white;
+    letter-spacing: .5px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: white;
+}
+
+hr {
+    margin: 0 auto;
+    width: 300px;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+#message {
+    position: absolute;
+    bottom: 0px;
+    background-color: chartreuse;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#pads-wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
+}
+
+#logo {
+    width: 240px;
+    align-self: flex-end;
+    margin: 60px 0 30px 0;
+}
+
+#pads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row {
