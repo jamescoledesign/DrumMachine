@@ -24,11 +24,6 @@ body {
     position: relative;
 }
 
-#pad1:active, #pad2:active, #pad3:active, #pad4:active, #pad5:active, #pad6:active, #pad7:active, #pad8:active, #pad9:active, #pad10:active, #pad11:active, #pad12:active, #pad13:active, #pad14:active, #pad15:active, #pad16:active {
-    background-color: red;
-}
-
-
 .sound-title {
     position: relative;
     z-index: 2;

@@ -52,7 +52,7 @@ function pause(sound) {
 }
 
 // Executes on each pad with mouse
-/*
+
 for (var i = 0; i < padArr.length; i++) {
     (function(index) {
         padArr[index].addEventListener("mousedown", function() {
@@ -70,7 +70,7 @@ for (var i = 0; i < padArr.length; i++) {
 
     })(i);
 }
-*/
+
 // Use keyboard to activate pad sound / change to black
 
 document.onkeydown = function(e) {
