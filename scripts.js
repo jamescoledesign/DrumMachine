@@ -53,7 +53,7 @@ function pause(sound) {
 
 // Executes on each pad with mouse
 
-for (var i = 0; i < padArr.length; i++) {
+/*for (var i = 0; i < padArr.length; i++) {
     (function(index) {
         padArr[index].addEventListener("mousedown", function() {
             padSelection = index;
@@ -68,21 +68,21 @@ for (var i = 0; i < padArr.length; i++) {
            pause(sound);
          })
         // Play audio on mobile 
-         padArr[index].addEventListener("ontouchstart", function() {
+         padArr[index].addEventListener("touchstart", function() {
             padSelection = index;
             console.log('Pad ' + padSelection + ' was clicked');
             let sound = padSelection;
             activate(sound);
           })
         // Pause audio on mobile
-          padArr[index].addEventListener("ontouchend", function() {
+          padArr[index].addEventListener("touchend", function() {
            padSelection = index;
            let sound = padSelection;
            pause(sound);
          })
 
     })(i);
-}
+}*/
 
 // Use keyboard to activate pad sound / change to black
 
