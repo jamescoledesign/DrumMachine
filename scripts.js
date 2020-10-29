@@ -1,19 +1,19 @@
-let audio1 = new Audio("sounds/Crash.wav"); 
-let audio2 = new Audio("sounds/Djembe-Center.wav");
-let audio3 = new Audio("sounds/Djembe-Rim.wav");  
-let audio4 = new Audio("sounds/Floor-Tom.wav"); 
-let audio5 = new Audio("sounds/Hat-Closed.wav");
-let audio6 = new Audio("sounds/Hat-Open.wav");
-let audio7 = new Audio("sounds/Hat-Pedal.wav");
-let audio8 = new Audio("sounds/Kick.wav");
-let audio9 = new Audio("sounds/Ride-Bell.wav");
-let audio10 = new Audio("sounds/Ride.wav");
-let audio11 = new Audio("sounds/Snare-Center.wav");
-let audio12 = new Audio("sounds/Snare-Edge.wav");
-let audio13 = new Audio("sounds/Snare-Rim.wav");
-let audio14 = new Audio("sounds/Tam-A.wav");
-let audio15 = new Audio("sounds/Tam-B.wav"); 
-let audio16 = new Audio("sounds/Tom.wav");
+let audio1 = new Audio("src/sounds/Crash.wav"); 
+let audio2 = new Audio("src/sounds/Djembe-Center.wav");
+let audio3 = new Audio("src/sounds/Djembe-Rim.wav");  
+let audio4 = new Audio("src/sounds/Floor-Tom.wav"); 
+let audio5 = new Audio("src/sounds/Hat-Closed.wav");
+let audio6 = new Audio("src/sounds/Hat-Open.wav");
+let audio7 = new Audio("src/sounds/Hat-Pedal.wav");
+let audio8 = new Audio("src/sounds/Kick.wav");
+let audio9 = new Audio("src/sounds/Ride-Bell.wav");
+let audio10 = new Audio("src/sounds/Ride.wav");
+let audio11 = new Audio("src/sounds/Snare-Center.wav");
+let audio12 = new Audio("src/sounds/Snare-Edge.wav");
+let audio13 = new Audio("src/sounds/Snare-Rim.wav");
+let audio14 = new Audio("src/sounds/Tam-A.wav");
+let audio15 = new Audio("src/sounds/Tam-B.wav"); 
+let audio16 = new Audio("src/sounds/Tom.wav");
 
 let audioArr = [audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10, audio11, audio12, audio13, audio14, audio15, audio16];
 
@@ -167,51 +167,51 @@ document.onkeydown = function(e) {
 
     if (keyResult == 1) {
         pause(0);
-        document.getElementById("pad1").style.backgroundColor = "black";
+        document.getElementById("pad1").style.backgroundColor = "#212121";
     } else if (keyResult == 2) {
         pause(1);
-        document.getElementById("pad2").style.backgroundColor = "black";
+        document.getElementById("pad2").style.backgroundColor = "#212121";
     } else if (keyResult == 3) {
         pause(2);
-        document.getElementById("pad3").style.backgroundColor = "black";
+        document.getElementById("pad3").style.backgroundColor = "#212121";
     } else if (keyResult== 4) {
         pause(3);
-        document.getElementById("pad4").style.backgroundColor = "black";
+        document.getElementById("pad4").style.backgroundColor = "#212121";
     } else if (keyResult== "q") {
         pause(4);
-        document.getElementById("pad5").style.backgroundColor = "black";
+        document.getElementById("pad5").style.backgroundColor = "#212121";
     } else if (keyResult== "w") {
         pause(5);
-        document.getElementById("pad6").style.backgroundColor = "black";
+        document.getElementById("pad6").style.backgroundColor = "#212121";
     } else if (keyResult== "e") {
         pause(6);
-        document.getElementById("pad7").style.backgroundColor = "black";
+        document.getElementById("pad7").style.backgroundColor = "#212121";
     } else if (keyResult== "r") {
         pause(7);
-        document.getElementById("pad8").style.backgroundColor = "black";
+        document.getElementById("pad8").style.backgroundColor = "#212121";
     } else if (keyResult== "a") {
         pause(8);
-        document.getElementById("pad9").style.backgroundColor = "black";
+        document.getElementById("pad9").style.backgroundColor = "#212121";
     } else if (keyResult== "s") {
         pause(9);
-        document.getElementById("pad10").style.backgroundColor = "black";
+        document.getElementById("pad10").style.backgroundColor = "#212121";
     } else if (keyResult== "d") {
         pause(10);
-        document.getElementById("pad11").style.backgroundColor = "black";
+        document.getElementById("pad11").style.backgroundColor = "#212121";
     } else if (keyResult== "f") {
         pause(11);
-        document.getElementById("pad12").style.backgroundColor = "black";
+        document.getElementById("pad12").style.backgroundColor = "#212121";
     } else if (keyResult== "z") {
         pause(12);
-        document.getElementById("pad13").style.backgroundColor = "black";
+        document.getElementById("pad13").style.backgroundColor = "#212121";
     } else if (keyResult== "x") {
         pause(13);
-        document.getElementById("pad14").style.backgroundColor = "black";
+        document.getElementById("pad14").style.backgroundColor = "#212121";
     } else if (keyResult== "c") {
         pause(14);
-        document.getElementById("pad15").style.backgroundColor = "black";
+        document.getElementById("pad15").style.backgroundColor = "#212121";
     } else if (keyResult== "v") {
         pause(15);
-        document.getElementById("pad16").style.backgroundColor = "black";
+        document.getElementById("pad16").style.backgroundColor = "#212121";
     }
   };

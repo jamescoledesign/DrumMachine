@@ -1,12 +1,23 @@
 body {
     margin: 0 auto;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+
+#logo {
+
+    display: flex;
+    width: 240px;
+    align-self: flex-end;
+    margin: 60px 0 30px 0;
 }
 
 #wrapper {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 600px;
 }
 
 .row {
@@ -20,8 +31,9 @@ body {
     height: 140px;
     margin: 6px;
     color: white;
-    background-color: black;
+    background-color: #212121;
     position: relative;
+    border-radius: 8px;
 }
 
 .sound-title {
@@ -49,6 +61,7 @@ button {
     margin-top: -30.5px;
     border: none;
     background-color: unset;
+    border-radius: 8px;
 }
 
 button:active {
