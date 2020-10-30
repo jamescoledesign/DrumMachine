@@ -51,6 +51,37 @@ function pause(sound) {
     audioArr[sound].currentTime = 0;
 }
 
+// Count clicks and change message
+
+let clicks = 0;
+let messageArr = [
+    "Let's make noise!",
+    "That sounds great!",
+    "Are you a pro?",
+    "Maybe practice more.",
+    "What a banger!"
+];
+
+function countClicks() {
+
+for (var i = 0; i < padArr.length; i++) {
+        (function(index) {
+            padArr[index].addEventListener("mousedown", function() {
+                clicks++;
+                console.log('The click count is ' + clicks);
+                if(clicks >= 4) {
+                    clicks = 0;
+                    let message = messageArr[Math.floor(Math.random() * messageArr.length)];
+                    document.getElementById("message").innerHTML = message; 
+                    console.log(message);   
+                }
+            })
+    })(i);
+ }
+}
+
+countClicks();
+
 // Executes on each pad with mouse or touch
 
 for (var i = 0; i < padArr.length; i++) {
