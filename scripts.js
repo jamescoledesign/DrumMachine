@@ -80,7 +80,25 @@ for (var i = 0; i < padArr.length; i++) {
  }
 }
 
+function countTouch() {
+
+    for (var i = 0; i < padArr.length; i++) {
+            (function(index) {
+                padArr[index].addEventListener("touchstart", function() {
+                    clicks++;
+                    console.log('The click count is ' + clicks);
+                    if(clicks >= 4) {
+                        clicks = 0;
+                        let message = messageArr[Math.floor(Math.random() * messageArr.length)];
+                        document.getElementById("message").innerHTML = message;  
+                    }
+                })
+        })(i);
+    }
+}
+
 countClicks();
+countTouch()
 
 // Executes on each pad with mouse or touch
 
