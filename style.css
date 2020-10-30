@@ -81,7 +81,26 @@ body {
     }
 }
 
-button.load {
+button.load-red {
+    float: left;
+    margin: 0 14px 14px 0;
+    position: unset;
+    border: none;
+    border-radius: 8px;
+    z-index: unset;
+    background-color: red;
+    height: 40px;
+    width: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+    button.load-red {
+        height: 80px;
+        width: 100px;
+    }
+}
+
+button.load-gray {
     float: left;
     margin: 0 14px 14px 0;
     position: unset;
@@ -94,7 +113,7 @@ button.load {
 }
 
 @media only screen and (max-width: 992px) {
-    button.load {
+    button.load-gray {
         height: 80px;
         width: 100px;
     }
