@@ -50,14 +50,14 @@ button.load {
     z-index: unset;
     background-color: darkgray;
     height: 40px;
-    width: 60px;;
+    width: 60px;
 }
 
 h3 {
     font-size: 22px;
     margin: 0 auto;
     margin-bottom: 14px;
-    color: white;
+    color: gray;
     letter-spacing: .5px;
 }
 
@@ -150,13 +150,14 @@ hr.footer-line {
     font-size: 16px;
 }
 
-.pad-title {
+.pad-assignment {
     z-index: 2;
     padding: 0px 0px 14px 14px;
     position: absolute;
     bottom: 0;
     left: 0;
     font-size: 14px;
+    opacity: 40%;
 }
 
 button {
