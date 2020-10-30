@@ -11,6 +11,14 @@ body {
     display: flex;
     flex-direction: row;
     width: 930px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    #interface {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 #controls {
@@ -23,6 +31,17 @@ body {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+    #controls {
+        align-content: center;
+        margin: 0 auto;
+        margin-bottom: 14px;
+        height: 360px;
+        width: 400px;
+        padding: 0 20px 0px 20px;
+    }
+} 
+
 #instructions {
     padding-right: 16px;
     height: 136px;
@@ -34,6 +53,12 @@ body {
     line-height: 24px;
     letter-spacing: .5px;
 }
+
+@media only screen and (max-width: 600px) {
+    #instructions {
+        display: none;
+    }
+} 
 
 .selection {
     display: flex;
@@ -86,6 +111,13 @@ hr.footer-line {
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+    hr.footer-line {
+        max-width: 100%;
+    }
+}
+
+
 #message {
     position: absolute;
     bottom: 0px;
@@ -101,11 +133,26 @@ hr.footer-line {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    #message {
+        height: 120px;
+        width: 100%;
+        max-width: 396px;
+    }
+}
+
 #wrapper {
     padding-top: 30px;
     display: flex;
     margin: 0 auto;
     max-width: 960px;
+}
+
+@media only screen and (max-width: 600px) {
+    #wrapper{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 #pads-wrapper {
@@ -114,6 +161,12 @@ hr.footer-line {
     flex-direction: column;
     align-items: center;
     width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    #pads-wrapper {
+        width: 100%;
+    }
 }
 
 #logo {
@@ -144,11 +197,24 @@ hr.footer-line {
     border-radius: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+    #pad1, #pad2, #pad3, #pad4, #pad5, #pad6, #pad7, #pad8, #pad9, #pad10, #pad11, #pad12, #pad13, #pad14, #pad15, #pad16 {
+        width: 90px;
+        height: 90px;
+    }
+}
+
 .sound-title {
     position: relative;
     z-index: 2;
     padding: 14px 0px 0px 14px;
     font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .sound-title {
+        font-size: 10px;
+    }
 }
 
 .pad-assignment {
@@ -173,6 +239,14 @@ button {
     border-radius: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+    button {
+        width: 90px;
+        height: 90px;
+        margin-top: -24px;
+    }
+}
+
 button:active {
     background-color: red;
 }
@@ -185,6 +259,13 @@ button:active {
     height: 60px;
     display: inline-block;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .about {
