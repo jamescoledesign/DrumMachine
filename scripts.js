@@ -117,11 +117,15 @@ for (var i = 0; i < padArr.length; i++) {
 
 // Use keyboard to activate pad sound / change to black
 
+let keyArr = [1, 2, 3, 4, "q", "w", "e", "r", "a", "s", "d", "f", "z", "x", "c", "v"];
+
+let keyCount = 0;
+
 document.onkeydown = function(e) {
 
     let keyResult = e.key;
     let padSelection = keyResult;
-    
+
     if (keyResult == 1) {
         activate(0);
         document.getElementById("pad1").style.backgroundColor = "red";
@@ -245,4 +249,18 @@ document.onkeydown = function(e) {
         pause(15);
         document.getElementById("pad16").style.backgroundColor = "#212121";
     }
+
+    // Count keys and change message
+
+    if(keyArr.includes(keyResult)) {
+        keyCount++;
+        console.log(keyCount);
+        if(keyCount >= 4) {
+            keyCount = 0;
+            let message = messageArr[Math.floor(Math.random() * messageArr.length)];
+            document.getElementById("message").innerHTML = message; 
+            console.log(message);   
+        }
+    }
+
   };
