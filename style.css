@@ -81,7 +81,7 @@ hr.footer-line {
     justify-self: center;
     margin-bottom: 30px;
     width: 930px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 #message {
@@ -89,7 +89,7 @@ hr.footer-line {
     bottom: 0px;
     background-color: chartreuse;
     width: 300px;
-    height: 200px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,7 @@ hr.footer-line {
 }
 
 #wrapper {
+    padding-top: 30px;
     display: flex;
     margin: 0 auto;
     max-width: 960px;
@@ -112,9 +113,9 @@ hr.footer-line {
 }
 
 #logo {
-    width: 240px;
-    align-self: flex-end;
-    margin: 60px 0 30px 0;
+    width: 180px;
+    align-self: flex-start;
+    margin: 0px 0 30px 0;
 }
 
 #pads{
@@ -188,3 +189,13 @@ button:active {
 .legal {
     float: right;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
